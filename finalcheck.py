@@ -4,6 +4,8 @@ import pickle
 import sys
 # import numpy
 
+ACCEPTABILITY = {0: "Acceptable", 1: "Dangerous", 2: "Fun",
+                 3: "Network", 4: "Safe", 5: "Unrated", 6: "Unsafe"}
 
 def predict_output(filename):
     data = pd.read_csv(filename)
