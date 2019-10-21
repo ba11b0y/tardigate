@@ -1,0 +1,9 @@
+[Unit]
+Description=ndp service for traffic and metrics sourcing
+
+[Service]
+WorkingDirectory=/home/arjun/tardigate-collector/ndP
+ExecStart=/usr/bin/node data_collector1.js
+
+[Install]
+WantedBy=multi-user.target
